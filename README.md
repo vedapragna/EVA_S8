@@ -17,6 +17,10 @@ Learning Rate	Update LR after few epochs	Epochs	Regularisation	Train Accuracy	Te
 0.0005	LR/3 after  every10 epochs	25	L2 weight decay = 0.2	93%	87%	Better Model
 
 
-| Attempt | #1 | #2 |
-| :---: | :---: | :---: |
-| Seconds | 301 | 283 |
+| Learning Rate | Update LR after few epochs | Epochs | Regularisation | Train Accuracy | Test Accuracy | Remarks |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 0.001 | No | 20 | No | 100% | 78% | Overfitting |
+| 0.001 | LR/3 after  every10 epochs | 30 | No | 100% | 82% | Overfitting |
+| 0.001 | LR/3 after  every10 epochs | 30 | L2 weight decay = 0.005 | 100% | 82% | Still Overfitting |
+| 0.001 | LR/3 after  every10 epochs | 30 | L2 weight decay = 0.01 | 99% | 84% | Still Overfitting |
+| 0.0005 | LR/3 after  every10 epochs | 25 | L2 weight decay = 0.2 | 93% | 87% | Better Model |
